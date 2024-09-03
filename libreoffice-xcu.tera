@@ -1,0 +1,306 @@
+---
+whiskers:
+  version: "2.3.0"
+  matrix:
+   - accent
+   - flavor
+  filename: "themes/{{ flavor.identifier }}/{{ accent }}/catppuccin-{{ flavor.identifier }}-{{ accent }}.xcu"
+---
+
+{%- set palette = flavor.colors -%}
+
+<item oor:path="/org.openoffice.Office.UI/ColorScheme/ColorSchemes">
+    <node oor:name="Catppuccin {{ flavor.identifier }} - {{ accent }}" oor:op="replace">
+        <node oor:name="Links">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ palette[accent].hex }})</value>
+            </prop>
+            <prop oor:name="IsVisible" oor:op="fuse">
+                <value>true</value>
+            </prop>
+        </node>
+        <node oor:name="Spell">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ red.hex }})</value>
+            </prop>
+        </node>
+        <node oor:name="Shadow">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ base.hex }})</value>
+            </prop>
+            <prop oor:name="IsVisible" oor:op="fuse">
+                <value>true</value>
+            </prop>
+        </node>
+        <node oor:name="CalcGrid">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ base.hex }})</value>
+            </prop>
+        </node>
+        <node oor:name="CalcText">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ palette[accent].hex }})</value>
+            </prop>
+        </node>
+        <node oor:name="DocColor">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ mantle.hex }})</value>
+            </prop>
+        </node>
+        <node oor:name="DrawGrid">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ surface0.hex }})</value>
+            </prop>
+            <prop oor:name="IsVisible" oor:op="fuse">
+                <value>true</value>
+            </prop>
+        </node>
+        <node oor:name="HTMLSGML">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ blue.hex }})</value>
+            </prop>
+        </node>
+        <node oor:name="CalcValue">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ blue.hex }})</value>
+            </prop>
+        </node>
+        <node oor:name="FontColor">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ rosewater.hex }})</value>
+            </prop>
+        </node>
+        <node oor:name="SQLNumber">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ green.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="SQLString">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ yellow.hex }})</value>
+            </prop>
+        </node>
+        <node oor:name="SmartTags">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ pink.hex }})</value>
+            </prop>
+        </node>
+        <node oor:name="BASICError">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ red.hex }})</value>
+            </prop>
+        </node>
+        <node oor:name="SQLComment">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ blue.hex }})</value>
+            </prop>
+        </node>
+        <node oor:name="SQLKeyword">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ teal.hex }})</value>
+            </prop>
+        </node>
+        <node oor:name="BASICNumber">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ mauve.hex }})</value>
+            </prop>
+        </node>
+        <node oor:name="BASICString">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ yellow.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="CalcFormula">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ green.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="HTMLComment">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ green.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="HTMLKeyword">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ red.hex  }})</value>
+            </prop>
+        </node>
+
+        <node oor:name="HTMLUnknown">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ rosewater.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="SQLOperator">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ rosewater.hex  }})</value>
+            </prop>
+        </node>
+
+        <node oor:name="BASICComment">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ blue.hex  }})</value>
+            </prop>
+        </node>
+
+        <node oor:name="BASICKeyword">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ peach.hex  }})</value>
+            </prop>
+        </node>
+
+        <node oor:name="LinksVisited">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ mauve.hex  }})</value>
+            </prop>
+            <prop oor:name="IsVisible" oor:op="fuse">
+                <value>true</value>
+            </prop>
+        </node>
+        <node oor:name="SQLParameter">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ peach.hex  }})</value>
+            </prop>
+        </node>
+
+        <node oor:name="AppBackground">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ crust.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="BASICOperator">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ green.hex  }})</value>
+            </prop>
+        </node>
+
+        <node oor:name="CalcDetective">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ teal.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="CalcPageBreak">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ blue.hex  }})</value>
+            </prop>
+        </node>
+
+        <node oor:name="CalcReference">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ pink.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="DocBoundaries">
+
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ base.hex  }})</value>
+            </prop>
+            <prop oor:name="IsVisible" oor:op="fuse">
+                <value>true</value>
+            </prop>
+        </node>
+        <node oor:name="SQLIdentifier">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ green.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="WriterTextGrid">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ base.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="BASICIdentifier">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ teal.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="TableBoundaries">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ base.hex  }})</value>
+            </prop>
+            <prop oor:name="IsVisible" oor:op="fuse">
+                <value>true</value>
+            </prop>
+        </node>
+        <node oor:name="ObjectBoundaries">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ base.hex  }})</value>
+            </prop>
+            <prop oor:name="IsVisible" oor:op="fuse">
+                <value>true</value>
+            </prop>
+        </node>
+        <node oor:name="WriterPageBreaks">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ blue.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="WriterIdxShadings">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ base.hex  }})</value>
+            </prop>
+            <prop oor:name="IsVisible" oor:op="fuse">
+                <value>true</value>
+            </prop>
+        </node>
+        <node oor:name="CalcDetectiveError">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ red.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="WriterDirectCursor">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ rosewater.hex  }})</value>
+            </prop>
+            <prop oor:name="IsVisible" oor:op="fuse">
+                <value>true</value>
+            </prop>
+        </node>
+        <node oor:name="CalcNotesBackground">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ base.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="CalcPageBreakManual">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ blue.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="WriterFieldShadings">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ base.hex  }})</value>
+            </prop>
+            <prop oor:name="IsVisible" oor:op="fuse">
+                <value>true</value>
+            </prop>
+        </node>
+        <node oor:name="WriterScriptIndicator">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ green.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="CalcPageBreakAutomatic">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ base.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="WriterHeaderFooterMark">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ teal.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="CalcProtectedBackground">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ base.hex  }})</value>
+            </prop>
+        </node>
+        <node oor:name="WriterSectionBoundaries">
+            <prop oor:name="Color" oor:op="fuse">
+                <value>(color:{{ base.hex  }})</value>
+            </prop>
+            <prop oor:name="IsVisible" oor:op="fuse">
+                <value>true</value>
+            </prop>
+        </node>
+    </node>
+</item>
