@@ -16,13 +16,38 @@ function replaceColors(str) {
 }
 const root = fs.readdirSync("./themes");
 root.forEach((folder) => {
-    const accents = fs.readdirSync(`./themes/${folder}`)
-    accents.forEach((a) => {
-let xcuSplits = fs.readFileSync(join(__dirname,'..', `themes`, folder, a, `catppuccin-${folder}-${a}.xcu`)).toString()
-const formatted = replaceColors(xcuSplits)
-fs.writeFileSync(join(__dirname,'..', `themes`, folder, a, `catppuccin-${folder}-${a}.xcu`), formatted
-.replaceAll('\n', '').replaceAll('\r', '').replaceAll(`\t`, '').replaceAll(`  `, '')
-)
-require('child_process').execSync(`sed -i 's/\r//' ${join(__dirname,'..', `themes`, folder, a, `install.sh`)}`)
-})
-})
+  const accents = fs.readdirSync(`./themes/${folder}`);
+  accents.forEach((a) => {
+    let xcuSplits = fs
+      .readFileSync(
+        join(
+          __dirname,
+          "..",
+          `themes`,
+          folder,
+          a,
+          `catppuccin-${folder}-${a}.xcu`,
+        ),
+      )
+      .toString();
+    const formatted = replaceColors(xcuSplits);
+    fs.writeFileSync(
+      join(
+        __dirname,
+        "..",
+        `themes`,
+        folder,
+        a,
+        `catppuccin-${folder}-${a}.xcu`,
+      ),
+      formatted
+        .replaceAll("\n", "")
+        .replaceAll("\r", "")
+        .replaceAll(`\t`, "")
+        .replaceAll(`  `, ""),
+    );
+    require("child_process").execSync(
+      `sed -i 's/\r//' ${join(__dirname, "..", `themes`, folder, a, `install.sh`)}`,
+    );
+  });
+});
