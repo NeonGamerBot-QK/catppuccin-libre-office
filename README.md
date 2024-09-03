@@ -49,6 +49,7 @@
 ## 💝 Thanks to
 
 - [NeonGamerBot](https://github.com/NeonGamerBot-QK)
+- [dracula/libreoffice](https://github.com/dracula/libreoffice)
 
 &nbsp;
 
