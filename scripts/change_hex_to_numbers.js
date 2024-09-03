@@ -17,7 +17,9 @@ root.forEach((folder) => {
     accents.forEach((a) => {
 let xcuSplits = fs.readFileSync(join(__dirname,'..', `themes`, folder, a, `catppuccin-${folder}-${a}.xcu`)).toString()
 const formatted = replaceColors(xcuSplits)
-fs.writeFileSync(join(__dirname,'..', `themes`, folder, a, `catppuccin-${folder}-${a}.xcu`), formatted.replaceAll('\n', '').replaceAll('\r', '').replaceAll(`\t`, '').replaceAll(` `, '') + "\n")
+fs.writeFileSync(join(__dirname,'..', `themes`, folder, a, `catppuccin-${folder}-${a}.xcu`), formatted
+.replaceAll('\n', '').replaceAll('\r', '').replaceAll(`\t`, '').replaceAll(`  `, '') + "\n"
+)
 require('child_process').execSync(`sed -i 's/\r//' ${join(__dirname,'..', `themes`, folder, a, `install.sh`)}`)
 })
 })

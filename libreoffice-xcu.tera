@@ -26,7 +26,7 @@ whiskers:
         </node>
         <node oor:name="Shadow">
             <prop oor:name="Color" oor:op="fuse">
-                <value>(color:{{ base.hex }})</value>
+                <value>(color:{{ text.hex }})</value>
             </prop>
             <prop oor:name="IsVisible" oor:op="fuse">
                 <value>true</value>
@@ -44,7 +44,7 @@ whiskers:
         </node>
         <node oor:name="DocColor">
             <prop oor:name="Color" oor:op="fuse">
-                <value>(color:{{ mantle.hex }})</value>
+                <value>(color:{{ base.hex }})</value>
             </prop>
         </node>
         <node oor:name="DrawGrid">
@@ -67,7 +67,7 @@ whiskers:
         </node>
         <node oor:name="FontColor">
             <prop oor:name="Color" oor:op="fuse">
-                <value>(color:{{ rosewater.hex }})</value>
+                <value>(color:{{ text.hex }})</value>
             </prop>
         </node>
         <node oor:name="SQLNumber">
@@ -128,12 +128,12 @@ whiskers:
 
         <node oor:name="HTMLUnknown">
             <prop oor:name="Color" oor:op="fuse">
-                <value>(color:{{ rosewater.hex  }})</value>
+                <value>(color:{{ text.hex  }})</value>
             </prop>
         </node>
         <node oor:name="SQLOperator">
             <prop oor:name="Color" oor:op="fuse">
-                <value>(color:{{ rosewater.hex  }})</value>
+                <value>(color:{{ text.hex  }})</value>
             </prop>
         </node>
 
@@ -224,7 +224,7 @@ whiskers:
         </node>
         <node oor:name="ObjectBoundaries">
             <prop oor:name="Color" oor:op="fuse">
-                <value>(color:{{ base.hex  }})</value>
+                <value>(color:{{ text.hex  }})</value>
             </prop>
             <prop oor:name="IsVisible" oor:op="fuse">
                 <value>true</value>
@@ -250,7 +250,7 @@ whiskers:
         </node>
         <node oor:name="WriterDirectCursor">
             <prop oor:name="Color" oor:op="fuse">
-                <value>(color:{{ rosewater.hex  }})</value>
+                <value>(color:{{ text.hex  }})</value>
             </prop>
             <prop oor:name="IsVisible" oor:op="fuse">
                 <value>true</value>
