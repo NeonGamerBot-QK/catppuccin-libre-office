@@ -14,7 +14,7 @@ undo-test:
   rm -rf config/*.soc
   rm registrymodifications.xcu
 build:
-  whiskers libreoffice-soc.tera
-  whiskers libreoffice-xcu.tera
-  whiskers libreoffice-sh.tera
+  whiskers templates/libreoffice-soc.tera
+  whiskers templates/libreoffice-xcu.tera
+  whiskers templates/libreoffice-sh.tera
   node scripts/change_hex_to_numbers.js
