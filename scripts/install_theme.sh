@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "Installation for latte - mauve"
+echo "Installation for $1"
 echo "Copying palette to config directory ..."
 if [ "$(uname)" = "Linux" ]; then
 	fname="${XDG_CONFIG_HOME:-$HOME/.config}"/libreoffice/*/user/registrymodifications.xcu
@@ -30,7 +30,7 @@ fi
 
 # Check if color scheme it present already
 existing_theme="$(grep -n \
-	'<item oor:path="/org.openoffice.Office.UI/ColorScheme/ColorSchemes"><node oor:name="Catppuccin latte - mauve"' \
+	'<item oor:path="/org.openoffice.Office.UI/ColorScheme/ColorSchemes"><node oor:name="Catppuccin {{ flavor.identifier }} - {{ accent }}"' \
 	"$fname")"
 exit_code=$?
 theme_line="$(echo "$existing_theme" | sed 's|:.*||')"
@@ -41,11 +41,11 @@ if [ $exit_code -eq 0 ]; then
 	settings_start="$(head -n $((theme_line-1)) "$fname")"
 	settings_end="$(tail -n +$((theme_line+1)) "$fname")"
 	new_settings="$(echo "$settings_start" \
-	             && cat ./catppuccin-latte-mauve.xcu \
+	             && cat $1 \
 	             && echo "$settings_end")"
 else
 	# Insert theme between last two lines if not present
-	new_settings="$(head -n $(($(<"$fname" wc -l)-1)) "$fname" && cat ./catppuccin-latte-mauve.xcu && tail -n1 "$fname")"
+	new_settings="$(head -n $(($(<"$fname" wc -l)-1)) "$fname" && cat $1 && tail -n1 "$fname")"
 fi
 
 # Write new settings to settings file

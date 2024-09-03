@@ -46,8 +46,5 @@ root.forEach((folder) => {
         .replaceAll(`\t`, "")
         .replaceAll(`  `, ""),
     );
-    require("child_process").execSync(
-      `sed -i 's/\r//' ${join(__dirname, "..", `themes`, folder, a, `install.sh`)}`,
-    );
   });
 });

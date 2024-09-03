@@ -16,5 +16,4 @@ undo-test:
 build:
   whiskers templates/libreoffice-soc.tera
   whiskers templates/libreoffice-xcu.tera
-  whiskers templates/libreoffice-sh.tera
   node scripts/change_hex_to_numbers.js
