@@ -41,6 +41,7 @@
 3. Select the downloaded flavor file.
 
 <!-- The FAQ section is optional. Remove if needed.-->
+
 ## 🙋 FAQ
 
 - Q: **_"How can I do X?"_**\
