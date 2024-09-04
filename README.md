@@ -39,10 +39,10 @@
 1. Clone this repo
 2. Close libre office.
 3. Run cmd to install application colors (linux and mac only): `bash scripts/install_theme.sh themes/flavor/accent/catppuccin-flavor-accent.xcu`
-4. Follow instructions in [INSTALLATION.md](./INSTALLATION.md) to install color pallete. 
+4. Follow instructions in [INSTALLATION.md](./INSTALLATION.md) to install color pallete.
 
 <!-- The FAQ section is optional. Remove if needed.-->
-<!-- 
+<!--
 ## 🙋 FAQ
 
 - Q: **_"How can I do X?"_**\
