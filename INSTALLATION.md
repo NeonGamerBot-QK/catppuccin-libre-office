@@ -11,5 +11,3 @@ Copy the `.soc` file you want to `$HOME/AppData/Roaming/LibreOffice"/*/user/conf
 ### Mac
 
 Copy the `.soc` file you want to `$HOME/Library/Application Support/LibreOffice"/*/user/config/`
-
-To install the rest go to the folder of which color you want (`themes/flavor/accent`) and run the `install.sh` file.
