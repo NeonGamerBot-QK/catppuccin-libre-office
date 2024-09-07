@@ -34,7 +34,7 @@ whiskers:
         </node>
         <node oor:name="CalcGrid">
             <prop oor:name="Color" oor:op="fuse">
-                <value>(color:{{ base.hex }})</value>
+                <value>(color:{{ surface2.hex }})</value>
             </prop>
         </node>
         <node oor:name="CalcText">
