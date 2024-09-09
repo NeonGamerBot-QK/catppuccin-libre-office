@@ -53,8 +53,8 @@ Copy the `.soc` file you want to `$HOME/AppData/Roaming/LibreOffice"/*/user/conf
 Copy the `.soc` file you want to `$HOME/Library/Application Support/LibreOffice"/*/user/config/`
 
 ### Application Colours
-
-_note: applies to macos/linux only_<br />
+> [!NOTE]
+> This only applies to macos/linux.
 
 > [!WARNING]
 > This will overwrite your main config for libre office and back it up before it does.
