@@ -36,7 +36,7 @@ exit_code=$?
 theme_line="$(echo "$existing_theme" | sed 's|:.*||')"
 
 if [ $exit_code -eq 0 ]; then
-  echo "Dracula theme appears to already be installed. Replacing it ..."
+  echo "Catppuccin theme appears to already be installed. Replacing it ..."
   # Replace existing line with
   settings_start="$(head -n $((theme_line - 1)) "$fname")"
   settings_end="$(tail -n +$((theme_line + 1)) "$fname")"
