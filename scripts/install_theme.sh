@@ -28,22 +28,9 @@ elif ! tail -n1 "$fname" | grep -E -q '^</oor:items>$'; then
   exit 1
 fi
 
-# Check if color scheme it present already
-existing_theme="$(grep -n \
-  '<item oor:path="/org.openoffice.Office.UI/ColorScheme/ColorSchemes"><node oor:name="Catppuccin {{ flavor.identifier }} - {{ accent }}"' \
-  "$fname")"
 exit_code=$?
 theme_line="$(echo "$existing_theme" | sed 's|:.*||')"
 
-if [ $exit_code -eq 0 ]; then
-  echo "Catppuccin theme appears to already be installed. Replacing it ..."
-  # Replace existing line with
-  settings_start="$(head -n $((theme_line - 1)) "$fname")"
-  settings_end="$(tail -n +$((theme_line + 1)) "$fname")"
-  new_settings="$(echo "$settings_start" \
-    && cat $1 \
-    && echo "$settings_end")"
-else
   # Insert theme between last two lines if not present
   new_settings="$(head -n $(($(wc < "$fname" -l) - 1)) "$fname" && cat $1 && tail -n1 "$fname")"
 fi
