@@ -36,8 +36,8 @@
 
 ## Usage
 
-
 ### Color palette
+
 To install the .soc file follow the steps per os
 
 #### Linux
@@ -53,13 +53,15 @@ Copy the `.soc` file you want to `$HOME/AppData/Roaming/LibreOffice"/*/user/conf
 Copy the `.soc` file you want to `$HOME/Library/Application Support/LibreOffice"/*/user/config/`
 
 ### Application Colours
-*note: applies to macos/linux only*<br />
+
+_note: applies to macos/linux only_<br />
 
 > [!WARNING]
 > This will overwrite your main config for libre office and back it up before it does.
 
 run script: `bash scripts/install_theme.sh themes/flavor/accent/catppuccin-flavor-accent.xcu`
 replace variables `flavor`, `accent` with correct values.
+
 <!-- The FAQ section is optional. Remove if needed.-->
 <!--
 ## 🙋 FAQ
