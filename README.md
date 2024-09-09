@@ -35,22 +35,23 @@
 </details>
 
 ## Usage
+In each example replace variables `flavor`, `accent` with correct values for which theme you want (ex: `mocha`, `mauve`). 
 
 ### Color palette
 
 To install the .soc file follow the steps per os
 
-#### Linux
+- Linux
 
-Copy the `.soc` file you want to `${XDG_CONFIG_HOME:-$HOME/.config}"/libreoffice/*/user/config/`
+Copy  `themes/flavor/accent/catppuccin-flavor-accent.soc` file you want to `${XDG_CONFIG_HOME:-$HOME/.config}"/libreoffice/*/user/config/`
 
-#### Windows
+- Windows
 
-Copy the `.soc` file you want to `$HOME/AppData/Roaming/LibreOffice"/*/user/config/`
+Copy  `themes/flavor/accent/catppuccin-flavor-accent.soc` file you want to `$HOME/AppData/Roaming/LibreOffice"/*/user/config/`
 
-#### Mac
+- Mac
 
-Copy the `.soc` file you want to `$HOME/Library/Application Support/LibreOffice"/*/user/config/`
+Copy  `themes/flavor/accent/catppuccin-flavor-accent.soc` file you want to `$HOME/Library/Application Support/LibreOffice"/*/user/config/`
 
 ### Application Colours
 
@@ -60,8 +61,7 @@ Copy the `.soc` file you want to `$HOME/Library/Application Support/LibreOffice"
 > [!WARNING]
 > This will overwrite your main config for libre office and back it up before it does.
 
-run script: `bash scripts/install_theme.sh themes/flavor/accent/catppuccin-flavor-accent.xcu`
-replace variables `flavor`, `accent` with correct values.
+Run  the script: `bash scripts/install_theme.sh themes/flavor/accent/catppuccin-flavor-accent.xcu`
 
 <!-- The FAQ section is optional. Remove if needed.-->
 <!--
