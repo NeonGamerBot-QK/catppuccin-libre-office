@@ -33,7 +33,6 @@ theme_line="$(echo "$existing_theme" | sed 's|:.*||')"
 
   # Insert theme between last two lines if not present
   new_settings="$(head -n $(($(wc < "$fname" -l) - 1)) "$fname" && cat $1 && tail -n1 "$fname")"
-fi
 
 # Write new settings to settings file
 echo "$new_settings" > "$fname"
