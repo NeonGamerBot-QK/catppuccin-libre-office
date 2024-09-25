@@ -4,9 +4,6 @@ echo "Copying palette to config directory ..."
 if [ "$(uname)" = "Linux" ]; then
   fname="${XDG_CONFIG_HOME:-$HOME/.config}"/libreoffice/*/user/registrymodifications.xcu
   fname="$(realpath $fname)" # expand
-elif [ "$(uname -o)" = "Msys" ]; then
-  fname="$HOME/AppData/Roaming/LibreOffice"/*/user/registrymodifications.xcu
-  fname="$(realpath $fname)"
 elif [ "$(uname)" = "Darwin" ]; then
   cd "$HOME/Library/Application Support/LibreOffice"/*/user # no realpath on macos
   fname="$(pwd)/registrymodifications.xcu"
