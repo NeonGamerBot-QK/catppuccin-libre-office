@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 echo "Installation for $1"
 echo "Copying palette to config directory ..."
 if [ "$(uname)" = "Linux" ]; then
