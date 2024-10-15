@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-echo "Installation for $1"
+echo "Installation for $1 - $2"
 echo "Copying palette to config directory ..."
 if [ "$(uname)" = "Linux" ]; then
   fname="${XDG_CONFIG_HOME:-$HOME/.config}"/libreoffice/*/user/registrymodifications.xcu
@@ -14,7 +14,7 @@ else
 fi
 
 # Create backup of LibreOffice registry before modifications
-cp -i "$fname" registrymodifications.xcu.bak
+cp -i "$fname" registrymodifications.xcu.$(date -u +"%Y-%m-%dT%H:%M:%SZ")bak
 
 # Check settings file
 if ! [ -f "$fname" ]; then
@@ -25,11 +25,8 @@ elif ! tail -n1 "$fname" | grep -E -q '^</oor:items>$'; then
   exit 1
 fi
 
-exit_code=$?
-theme_line="$(echo "$existing_theme" | sed 's|:.*||')"
-
 # Insert theme between last two lines if not present
-new_settings="$(head -n $(($(wc < "$fname" -l) - 1)) "$fname" && cat $1 && tail -n1 "$fname")"
+new_settings="$(head -n $(($(wc < "$fname" -l) - 1)) "$fname" && cat ../themes/$1/$2/catppuccin-$1-$2.soc && tail -n1 "$fname")"
 
 # Write new settings to settings file
 echo "$new_settings" > "$fname"
