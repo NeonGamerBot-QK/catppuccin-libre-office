@@ -52,7 +52,7 @@ Copy the `.soc` file (`themes/<flavor>/<accent>/catppuccin-<flavor>-<accent>.soc
 > Application Colors can only be modified on macOS and Linux.
 
 > [!WARNING]  
-> This will backup and overwrite the `registrymodifications.xcu` configuration file. 
+> This will backup and overwrite the `registrymodifications.xcu` configuration file.
 
 Run the [scripts/install_theme.sh](./scripts/install_theme.sh) script.
 
