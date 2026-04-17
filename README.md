@@ -1,14 +1,14 @@
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
-	Catppuccin for <a href="https://github.com/catppuccin/libre-office">LibreOffice</a>
+	Catppuccin for <a href="https://libreoffice.org">LibreOffice</a>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
 </h3>
 
 <p align="center">
-	<a href="https://github.com/catppuccin/libre-office/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/libre-office?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/libre-office/issues"><img src="https://img.shields.io/github/issues/catppuccin/libre-office?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
-	<a href="https://github.com/catppuccin/libre-office/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/libre-office?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/libreoffice/stargazers"><img src="https://img.shields.io/github/stars/catppuccin/libreoffice?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/libreoffice/issues"><img src="https://img.shields.io/github/issues/catppuccin/libreoffice?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/libreoffice/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/libreoffice?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -46,7 +46,8 @@ Copy the `.soc` file (`themes/<flavor>/<accent>/catppuccin-<flavor>-<accent>.soc
 - **macOS**: `$HOME/Library/Application Support/LibreOffice"/*/user/config/`
 - **Windows**: `$HOME/AppData/Roaming/LibreOffice"/*/user/config/`
 
-Important: After copying the chosen `.soc` file, open LibreOffice and go to Tools → Options → LibreOffice → Appearance. Toggle the "Enable application theming" setting to ensure the theming settings file is generated. Then fully close all LibreOffice windows (save your work) before running the install script.
+> [!IMPORTANT]
+> After copying the chosen `.soc` file, open LibreOffice and go to Tools → Options → LibreOffice → Appearance. Toggle the "Enable application theming" setting to ensure the theming settings file is generated. Then fully close all LibreOffice windows (save your work) before running the install script.
 
 ### Application Colors
 
