@@ -43,6 +43,7 @@ Replace the variables `<flavor>` and `<accent>` with the values that you want to
 Copy the `.soc` file (`themes/<flavor>/<accent>/catppuccin-<flavor>-<accent>.soc`) to the correct path for your operating system:
 
 - **Linux**: `${XDG_CONFIG_HOME:-$HOME/.config}"/libreoffice/*/user/config/`
+- **Linux (Flatpak)**: `$HOME/.var/app/org.libreoffice.LibreOffice/config/libreoffice/*/user/config/`
 - **macOS**: `$HOME/Library/Application Support/LibreOffice"/*/user/config/`
 - **Windows**: `$HOME/AppData/Roaming/LibreOffice"/*/user/config/`
 
